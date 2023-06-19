@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./axios.min.js"></script>
+    
+    <script src="./index.js"></script>
+    <link rel="stylesheet" href="./css/milligram.css">
+
+</head>
+
+<body>
+    <div class="container" style="margin-top: 40px;">
+        <div class="">
+            <h3>
+                Question 4
+            </h3>
+            <p>
+                b. Implement the function to open a new window with the URL "https://www.example.com" and dimensions
+                800x600.
+                <br>
+                Answer:
+            </p>
+            <button onclick="openWindow('https://www.example.com','800','600')">
+                Click For New Window
+            </button>
+        </div>
+
+        <div>
+            <h3>
+                Question 7
+            </h3>
+            <p>
+                c. When the user moves the mouse over an image, change the image source to another image of your choice
+            </p>
+            <img id="myImage" src="./images/1.jpg" alt="mainImage" height="200" width="200" onmouseover="_mouseOver()"
+                onmouseout="_mouseOut()">
+        </div>
+        <div>
+            <h3>
+                Question 8
+            </h3>
+            <p>
+                a. Create a webpage with a button and a paragraph element.
+            </p>
+
+            <div class="container" style="margin-top: 20px;">
+                <h3>Question: b. Implement a JavaScript function that changes the text content of the paragraph element
+                    to "Button Clicked!" when the button is clicked.</h3>
+
+                Answer:
+                <br>
+                <p id="myParagraph">This is a paragraph element.</p>
+                <button id="myButton" onclick="buttonClick()">Click Me</button>
+            </div>
+
+
+
+
+        </div>
+
+        <div>
+            <h3>
+                Question 9
+
+            </h3>
+
+            <form id="myForm" onsubmit="formSubmit(event)">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                    <span id="nameError" class="error"></span>
+                </div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <span id="emailError" class="error"></span>
+                </div>
+
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password">
+                    <span id="passwordError" class="error"></span>
+                </div>
+
+                <div>
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword">
+                    <span id="confirmPasswordError" class="error"></span>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+
+        </div>
+        <div>
+            <h3>Question 10:</h3>
+            <p>b. Implement a JavaScript function that adds a CSS class named "highlight" to the paragraph element when
+                the button is clicked. The "highlight" class should change the background color of the paragraph to
+                yellow.</p>
+
+            <p id="paragraphElement">This is a paragraph element.</p>
+            <button id="buttonElement" onclick="highlightParagraph()">Click Me</button>
+
+        </div>
+
+        <div>
+            <h3>
+                Question 11:
+
+
+            </h3>
+            <p>
+                b.Implement a JavaScript function that dynamically creates five list items (< li>) with sequential
+                    numbers (1 to 5) and appends them to the unordered list.
+
+            </p>
+            <ul id="myList"></ul>
+
+            <button onclick="createListItems()">Click Me to Create List Items"></button>
+        </div>
+
+
+        <div>
+            <h3>
+                Question 12. DOM Change Attribute Value:
+            </h3>
+            <p>
+
+
+
+
+                a. Create a webpage with an image element (< img>) that has an initial source URL.
+
+                    <br>
+                    b. Implement a JavaScript function that changes the source URL of the image element when a button is
+                    clicked. Use a different image URL of your choice.
+            </p>
+
+            <img id="myImageId" src="images/1.jpg" alt="Initial Image" style="width: 300px;">
+            <br>
+            <button onclick="changeImageSource()">Change Image</button>
+        </div>
+
+        <div>
+            <h3>
+                13.DOM Query Selector:
+
+
+
+
+
+            </h3>
+            <p>
+
+
+
+
+                a. Create a webpage with multiple paragraphs containing different classes and IDs.
+
+                    <br>
+                    b. Implement a JavaScript function that selects all paragraphs with a specific class and changes their text color to red.
+
+            </p>
+            <br>
+            Answer: 
+
+
+            <p id="firstParagraph">This is the first paragraph.</p>
+            <p class="myClass">This is the second paragraph with the class "myClass".</p>
+            <p>This is the third paragraph without any specific class or ID.</p>
+            <p class="myClass">This is the fourth paragraph with the class "myClass".</p>
+            <p  class="myClass">This is the second paragraph with the class "myClass".</p>
+
+            <button onclick="changeTextColor()">Change Text Color</button></button>
+          
+        </div>
+    </div>
+
+</body>
+
+</html>
