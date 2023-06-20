@@ -130,6 +130,7 @@ function coordinatesClick(event) {
   var x = event.clientX;
   var y = event.clientY;
   console.log(`Clicked coordinates: (${x}, ${y})`);
+  // alert(`Clicked coordinates: (${x}, ${y})`);
 }
 
 document.addEventListener("click", coordinatesClick);
